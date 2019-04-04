@@ -221,7 +221,45 @@ header {
 	font-family: 'Josefin Slab', serif;
 	text-align: center;	
 	height: 400px;
-	overflow: auto;
+	padding: 0px 10px;
+	width: 100%;
+
+	.table-fixed{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		border-top: 1px solid black;
+		width: 98.1%;
+
+		@media (max-width: 600px){
+			width: 96.7%;
+		}
+		h2{
+			width: 33%;
+			padding: 10px 0px;
+			text-align: center;			
+		}
+	}
+
+	.table-scroll{
+		max-height: 30vh;
+		overflow: auto;
+		
+		.table-row{
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			width: 100%;
+			text-align: center;
+			
+
+			span{
+				width: 33%;
+				padding: 20px 0px;
+				border-top: 1px solid black;
+			}
+		}
+	}
 
 	@media (max-width: 500px){
 		margin-top: 20px;
@@ -229,27 +267,6 @@ header {
 	
 	h2 {
 		font-size: 2rem;
-	}
-
-	table {
-		width: 90%;
-		text-align: center;
-		margin: 0 auto;
-		overflow: auto;
-		th {
-			padding: 20px 0px;
-			font-size: 1.5rem;
-			font-weight: bold;
-		}
-
-		tr {
-			.border-no-sides();
-		}
-
-		td {
-			padding: 20px 5px;
-		}
-		
 	}
 
 }

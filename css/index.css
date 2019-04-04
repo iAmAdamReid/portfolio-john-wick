@@ -286,7 +286,41 @@ body {
   font-family: 'Josefin Slab', serif;
   text-align: center;
   height: 400px;
+  padding: 0px 10px;
+  width: 100%;
+}
+.container .work-history .table-fixed {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-top: 1px solid black;
+  width: 98.1%;
+}
+@media (max-width: 600px) {
+  .container .work-history .table-fixed {
+    width: 96.7%;
+  }
+}
+.container .work-history .table-fixed h2 {
+  width: 33%;
+  padding: 10px 0px;
+  text-align: center;
+}
+.container .work-history .table-scroll {
+  max-height: 30vh;
   overflow: auto;
+}
+.container .work-history .table-scroll .table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.container .work-history .table-scroll .table-row span {
+  width: 33%;
+  padding: 20px 0px;
+  border-top: 1px solid black;
 }
 @media (max-width: 500px) {
   .container .work-history {
@@ -295,25 +329,6 @@ body {
 }
 .container .work-history h2 {
   font-size: 2rem;
-}
-.container .work-history table {
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  overflow: auto;
-}
-.container .work-history table th {
-  padding: 20px 0px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.container .work-history table tr {
-  border: 1px solid black;
-  border-left: 0px;
-  border-right: 0px;
-}
-.container .work-history table td {
-  padding: 20px 5px;
 }
 .container footer {
   font-family: 'Josefin Slab', serif;
